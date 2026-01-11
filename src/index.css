@@ -1,32 +1,17 @@
 @import "tailwindcss";
 
-@theme {
-  --color-mitec-blue: #35398e;
+html { scroll-behavior: smooth; }
+body { 
+  background-color: #0a0c1a; 
+  color: #cbd5e1; 
+  margin: 0; 
+  font-family: 'Inter', sans-serif;
 }
-
-/* 1. Smooth Scroll per la navigazione tra sezioni */
-html {
-  scroll-behavior: smooth;
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
-
-/* 2. Reset e Background Deep Space */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #0a0c1a; /* Tema scuro coerente con l'estetica aerospaziale */
-  color: #cbd5e1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* 3. Animazione Nebula per la Hero (opzionale, per il tocco "cool") */
-@keyframes nebula {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.animate-nebula {
-  background-size: 200% 200%;
-  animation: nebula 15s ease infinite;
+.bg-glow {
+  background: radial-gradient(circle at 50% 30%, #1e224f 0%, #0a0c1a 70%);
 }
