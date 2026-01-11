@@ -1,35 +1,48 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#05060f] py-24 px-4 border-t border-white/5">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-16 mb-20 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600">
-          <div className="col-span-1 md:col-span-2">
-            <h4 className="text-white text-2xl font-black tracking-tighter mb-6 uppercase italic">μtec MITEC</h4>
-            <p className="text-xs leading-loose italic opacity-50 lowercase tracking-widest">Microelectronics technologies and equipment. Thin film-Thick film hybrid circuits. Vacuum processes[cite: 5].</p>
-          </div>
-          <div>
-            <h5 className="text-blue-500 mb-6">Navigation</h5>
-            <ul className="space-y-3">
-              <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#microwave" className="hover:text-white transition-colors">Microwave</a></li>
-              <li><a href="#quality" className="hover:text-white transition-colors">Quality</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="text-blue-500 mb-6">Contact</h5>
-            <p className="mb-2">info@mitecgroup.it [cite: 512]</p>
-            <p>sales@mitecgroup.it [cite: 512]</p>
-            <div className="mt-8 p-4 border border-white/5 rounded-lg text-center">
-               <span className="text-white">ISO 9001:2015 - DNV Certified [cite: 547]</span>
-            </div>
+    <footer id="contacts" className="bg-[#05060f] text-slate-500 py-20 px-4 border-t border-white/5">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 mb-16">
+        {/* Info Aziendali */}
+        <div>
+          <h4 className="text-white font-black text-xl mb-6 tracking-tighter uppercase italic">μtec MITEC</h4>
+          <p className="text-[10px] leading-loose uppercase tracking-[0.2em] opacity-50">
+            Microelectronics technologies and equipment [cite: 1] <br/>
+            Thin film-Thick film hybrid circuits [cite: 1] <br/>
+            Vacuum processes [cite: 1]
+          </p>
+        </div>
+
+        {/* Link Rapidi (come da Doc B) */}
+        <div className="text-[10px] font-bold uppercase tracking-[0.2em]">
+          <h5 className="text-blue-500 mb-6 underline underline-offset-8">Links</h5>
+          <ul className="grid grid-cols-2 gap-y-3">
+            <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
+            <li><a href="#microwave" className="hover:text-white transition-colors">Microwave</a></li>
+            <li><a href="#procurement" className="hover:text-white transition-colors">Procurement</a></li>
+            <li><a href="#vacuum" className="hover:text-white transition-colors">Vacuum</a></li>
+            <li><a href="#quality" className="hover:text-white transition-colors">Quality</a></li>
+          </ul>
+        </div>
+
+        {/* Contatti Essenziali */}
+        <div className="text-[11px] leading-relaxed">
+          <h5 className="text-blue-500 font-bold uppercase tracking-widest mb-6 text-[10px] underline underline-offset-8">Contact Info</h5>
+          <p className="text-slate-300 mb-2">info@mitecgroup.it [cite: 1, 467]</p>
+          <p className="text-slate-300 mb-4">T. +39 06 41234399 [cite: 1, 465]</p>
+          <div className="pt-4 border-t border-white/5">
+            <p className="text-[10px] font-bold text-white uppercase tracking-widest">
+              ISO 9001:2015 Certified | IAF: 19 | DNV [cite: 220, 452]
+            </p>
           </div>
         </div>
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] uppercase tracking-[0.5em] opacity-30 text-white">
-          <span>© 2026 MITEC S.r.l. - All Rights Reserved [cite: 550]</span>
-          <span>P.IVA 06194761000 [cite: 40]</span>
-          <span>www.mitecgroup.it [cite: 514]</span>
-        </div>
+      </div>
+      
+      {/* Copyright e Dati Legali */}
+      <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] uppercase tracking-[0.5em] opacity-30 text-white">
+        <span>© 2026 MITEC S.r.l. - All Rights Reserved [cite: 505]</span>
+        <span>P.IVA 06681910961 [cite: 505]</span>
+        <span>www.mitecgroup.it [cite: 83, 469]</span>
       </div>
     </footer>
   );
