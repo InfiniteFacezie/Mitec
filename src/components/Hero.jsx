@@ -67,9 +67,9 @@ function Hero() {
           <div className="relative overflow-hidden border border-white/10 rounded-2xl bg-slate-900 shadow-2xl">
             {/* Technical Image: PCB/Cleanroom/Waveguide */}
             <img 
-              src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&q=80&w=1200" 
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" 
               alt="Microwave RF Circuit Board Assembly" 
-              className="w-full aspect-[4/5] object-cover opacity-70 group-hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0"
+              className="w-full aspect-[4/5] object-cover opacity-70 group-hover:scale-105 transition-transform duration-1000"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
             
